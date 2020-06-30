@@ -1,0 +1,36 @@
+.Tabs {
+    display: flex;
+    border: 2px solid black;
+    position: sticky;
+    top: 0;
+  }
+  
+  .Tabs>div {
+    border-right: 2px solid black;
+    padding: 3px 15px;
+    cursor: pointer;
+  }
+  .Tabs>div:hover{
+    background: #000;
+    color: #fff;
+  }
+  
+  .Tabs>div.active {
+    background: #50a940;
+    color: #fff;
+  }
+  .Tabs input[type="text"]::placeholder {
+    color: #c3b7b7;
+  }
+  .Tabs>div:last-child {
+    border: none;
+  }
+  .Tabs>div>.fa-times {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+}
+
+.Tabs input {
+    padding-right: 3px;
+}  

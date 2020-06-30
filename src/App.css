@@ -9,29 +9,7 @@ div#root {
   max-width: 584px;
 }
 
-.Tabs {
-  display: flex;
-  border: 2px solid black;
-  position: sticky;
-  top: 0;
-}
 
-.Tabs>div {
-  border-right: 2px solid black;
-  padding: 3px 15px;
-  cursor: pointer;
-}
-
-.sidebar {
-  position: fixed;
-  height: 350px;
-    width: 200px;
-    top: 31px;
-    border: 2px solid;
-    border-top: 0;
-    overflow: auto;
-    overflow-x: hidden;
-}
 
 .email-body {
   margin-left: 200px;
@@ -43,32 +21,6 @@ div#root {
   padding: 10px;
   overflow: auto;
     overflow-x: hidden;
-}
-.sidebar>div {
-  margin: 10px 0;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    padding: 5px;
-    background: #f7f7f7;
-    cursor: pointer;
-    transition: 0.4s;
-    position: relative;
-    white-space: pre;
-    overflow: hidden;
-}
-
-.sidebar>div:hover,.sidebar>div.active {
-  background: #000;
-  color: #fff;
-}
-.Tabs>div:hover{
-  background: #000;
-  color: #fff;
-}
-
-.Tabs>div.active {
-  background: #50a940;
-  color: #fff;
 }
 .mail-buttons {
   text-align: right;
@@ -123,15 +75,7 @@ button.cancel {
   padding: 2px;
   border-radius: 4px;
 }
-.sidebar>div>span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #ff4141;
-  font-size: 13px;
-  color: #fff;
-  padding: 2px;
-}
+
 .all-text img {
   display: block;
   max-width: 250px;
@@ -147,42 +91,3 @@ input[type="text"] {
   color: #fff;
   padding-left: 10px;
 }
-
-.Tabs input[type="text"]::placeholder {
-  color: #c3b7b7;
-}
-.Tabs>div:last-child {
-  border: none;
-}
-form>input {
-  display: block;
-  border: 1px solid black !important;
-  width: 100%;
-  margin-top: 10px;
-  background: #fff !important;
-  padding: 10px;
-}
-
-form {
-  max-width: 250px;
-  margin: auto;
-  text-align: center;
-  background: #dad4d4;
-  padding: 10px 20px;
-  margin-top: 50px;
-}
-.err-box {
-  background: red;
-  color: #fff;
-  margin-top: 10px;
-}
-form button {
-  padding: 7px 13px;
-  margin-top: 10px;
-  cursor: pointer;
-  background: #000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-}
-.sidebar:empty:before {content: "No emails to show";display: flex;}
